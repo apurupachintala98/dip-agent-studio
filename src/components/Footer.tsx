@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className="flex items-center gap-3">
              <Link to="/" className="flex items-center group">
             <img
-              src="/logo.png"
+              src="/old-logo.png"
               alt="Data Intelligence Platform Agent Studio"
               className="h-10 w-auto"
             />

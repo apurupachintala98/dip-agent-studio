@@ -33,12 +33,15 @@ export const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center group">
+          <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/logo.png"
+             src="/logo.png"
               alt="Data Intelligence Platform Agent Studio"
-              className="h-10 w-auto"
+              className="h-10 w-auto object-contain"
             />
+            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent leading-none">
+               Data Intelligence Platform Agent Studio
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

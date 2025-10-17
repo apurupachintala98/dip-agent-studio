@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"
 import { Brain, Mail, Lock, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,12 +8,27 @@ import { Label } from "@/components/ui/label";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
     console.log("Login attempt:", { email, password });
+    navigate("/#profile")
   };
+
+  const handleSignIn = () => {
+    // Navigate to home page first
+    navigate("/")
+
+    // Wait for navigation to complete, then scroll to profile section
+    setTimeout(() => {
+      const profileSection = document.getElementById("profile")
+      if (profileSection) {
+        profileSection.scrollIntoView({ behavior: "smooth", block: "start" })
+      }
+    }, 100)
+  }
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-6 relative overflow-hidden">
@@ -35,7 +50,7 @@ const Login = () => {
         {/* Login Card */}
         <div className="bg-card/60 backdrop-blur-xl border border-border rounded-2xl p-8 shadow-card">
           {/* Logo */}
-           <div className="flex flex-col items-center justify-center gap-3 mb-8">
+          <div className="flex flex-col items-center justify-center gap-3 mb-8">
             <Link to="/" className="flex items-center group">
               <img src="/logo.png" alt="Data Intelligence Platform Agent Studio" className="h-10 w-auto" />
             </Link>
@@ -51,7 +66,7 @@ const Login = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <div className="relative">
@@ -98,9 +113,9 @@ const Login = () => {
             </div>
 
             <Button
-              type="submit"
               className="w-full bg-gradient-primary hover:opacity-90 transition-opacity text-lg py-6"
-            >
+              type="button"
+              onClick={handleSignIn}>
               Sign In
             </Button>
 

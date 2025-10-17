@@ -97,7 +97,7 @@ export const ProfileSection = () => {
 
               {/* Description */}
               <div className="space-y-2">
-                <Label htmlFor="description">Description</Label>
+                <Label htmlFor="description">Agent Purpose</Label>
                 <Textarea
                   id="description"
                   placeholder="This is a demo general knowledge agent that can answer questions and provide information..."
