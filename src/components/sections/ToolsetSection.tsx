@@ -50,7 +50,7 @@ export const ToolsetSection = () => {
             {/* Add Tool Options */}
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               {/* From Catalog */}
-              <div className="group relative bg-secondary/30 border border-border hover:border-primary/50 rounded-xl p-6 cursor-pointer transition-all hover:bg-secondary/50">
+              <div className="group relative bg-secondary/30 border border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg">
                 <div className="space-y-3">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow">
                     <Package className="w-6 h-6 text-primary-foreground" />
@@ -65,7 +65,7 @@ export const ToolsetSection = () => {
               </div>
 
               {/* From File/MCP */}
-              <div className="group relative bg-secondary/30 border border-border hover:border-primary/50 rounded-xl p-6 cursor-pointer transition-all hover:bg-secondary/50">
+               <div className="group relative bg-secondary/30 border border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg">
                 <div className="space-y-3">
                   <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center shadow-glow">
                     <Server className="w-6 h-6 text-accent-foreground" />
@@ -90,7 +90,7 @@ export const ToolsetSection = () => {
                 {tools.map((tool, index) => (
                   <div
                     key={index}
-                    className="bg-secondary/30 border border-border rounded-lg p-4 hover:border-primary/50 transition-all cursor-pointer group"
+                     className="bg-secondary/30 border border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-lg p-4 transition-all cursor-pointer hover:shadow-md group"
                   >
                     <div className="flex items-center gap-3">
                       <span className="text-2xl">{tool.icon}</span>
@@ -115,7 +115,7 @@ export const ToolsetSection = () => {
                   <p className="text-sm text-muted-foreground mb-3">
                     Build your own tools with custom functions and integrations
                   </p>
-                  <Button variant="outline" size="sm" className="border-border">
+                  <Button variant="outline" size="sm" className="border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 hover:shadow-md">
                     Learn More
                   </Button>
                 </div>

@@ -63,7 +63,7 @@ export const ProfileSection = () => {
               <div className="space-y-2">
                 <Label htmlFor="model">LLM Service Provider</Label>
                 <Select defaultValue="Cortex">
-                  <SelectTrigger className="bg-secondary/50 border-border">
+                  <SelectTrigger className="w-full bg-secondary/50 border-border">
                     <SelectValue placeholder="Choose AI Service Provider" />
                   </SelectTrigger>
                   <SelectContent className="bg-popover border-border">
@@ -80,7 +80,7 @@ export const ProfileSection = () => {
               <div className="space-y-2">
                 <Label htmlFor="model">AI Model</Label>
                 <Select defaultValue="llama-3">
-                  <SelectTrigger className="bg-secondary/50 border-border">
+                  <SelectTrigger className="w-full bg-secondary/50 border-border">
                     <SelectValue placeholder="Select a model" />
                   </SelectTrigger>
                   <SelectContent className="bg-popover border-border">

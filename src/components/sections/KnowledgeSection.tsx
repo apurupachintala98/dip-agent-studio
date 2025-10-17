@@ -41,7 +41,7 @@ export const KnowledgeSection = () => {
             {/* Knowledge Sources Grid */}
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               {/* File Upload */}
-              <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-primary/50 rounded-xl p-6 cursor-pointer transition-all hover:bg-secondary/50">
+               <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow">
                     <FileText className="w-6 h-6 text-primary-foreground" />
@@ -56,7 +56,7 @@ export const KnowledgeSection = () => {
               </div>
 
               {/* Database Connection */}
-              <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-primary/50 rounded-xl p-6 cursor-pointer transition-all hover:bg-secondary/50">
+              <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center shadow-glow">
                     <Database className="w-6 h-6 text-accent-foreground" />
@@ -71,7 +71,7 @@ export const KnowledgeSection = () => {
               </div>
 
               {/* Web Connection */}
-              <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-primary/50 rounded-xl p-6 cursor-pointer transition-all hover:bg-secondary/50">
+              <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow">
                     <Link2 className="w-6 h-6 text-primary-foreground" />
@@ -86,7 +86,7 @@ export const KnowledgeSection = () => {
               </div>
 
               {/* Repository */}
-              <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-primary/50 rounded-xl p-6 cursor-pointer transition-all hover:bg-secondary/50">
+               <div className="group relative bg-secondary/30 border-2 border-dashed border-border hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center shadow-glow">
                     <FolderOpen className="w-6 h-6 text-accent-foreground" />

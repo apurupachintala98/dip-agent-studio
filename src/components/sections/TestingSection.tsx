@@ -58,7 +58,7 @@ export const TestingSection = () => {
                 {/* System Info */}
                 <div className="flex justify-center">
                   <div className="bg-accent/10 border border-accent/30 rounded-full px-3 py-1">
-                    <p className="text-xs text-accent">Success in 2.0s</p>
+                    <p className="text-xs text-accent text-success">Success in 2.0s</p>
                   </div>
                 </div>
               </div>
@@ -97,21 +97,21 @@ export const TestingSection = () => {
                 <TabsContent value="input" className="space-y-3 mt-4">
                   <div className="bg-secondary/30 border border-border rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs font-mono bg-primary/20 px-2 py-1 rounded text-primary">T</span>
+                      <span className="text-xs font-mono bg-primary/20 px-2 py-1 rounded text-primary" style={{border: "1px solid #000"}}>T</span>
                       <span className="text-sm font-medium">action</span>
                     </div>
                     <p className="text-sm text-muted-foreground">saveContext</p>
                   </div>
                   <div className="bg-secondary/30 border border-border rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs font-mono bg-primary/20 px-2 py-1 rounded text-primary">T</span>
+                      <span className="text-xs font-mono bg-primary/20 px-2 py-1 rounded text-primary" style={{border: "1px solid #000"}}>T</span>
                       <span className="text-sm font-medium">input</span>
                     </div>
                     <p className="text-sm text-muted-foreground">What is the capital of France</p>
                   </div>
                   <div className="bg-secondary/30 border border-border rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs font-mono bg-primary/20 px-2 py-1 rounded text-primary">T</span>
+                      <span className="text-xs font-mono bg-primary/20 px-2 py-1 rounded text-primary" style={{border: "1px solid #000"}}>T</span>
                       <span className="text-sm font-medium">system_message</span>
                     </div>
                     <p className="text-sm text-muted-foreground">You are a helpful assistant</p>
